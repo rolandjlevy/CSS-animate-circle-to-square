@@ -1,7 +1,7 @@
 # Animate Circles and Squares
 
 ### Description
-Just experimenting with animatiing circles and squares on mouseover
+Experimenting with CSS to animate circles and squares on mouseover
 
 
 ### Links
