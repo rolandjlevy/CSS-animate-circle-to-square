@@ -6,6 +6,7 @@ h3 {
   color: #fff;
   font-size: 2rem;
   font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .wrapper {
@@ -13,13 +14,14 @@ h3 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin: auto 30px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-  max-width: 400px
+  max-width: 320px
 }
 
 .shape {
