@@ -1,4 +1,4 @@
-# Circles to Squares
+# Animate Circles and Squares
 
 ### Description
 Just experimenting with animatiing circles and squares on mouseover
