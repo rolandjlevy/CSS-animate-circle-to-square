@@ -82,3 +82,7 @@ h3 {
 .container[data-morph-to='circle'] .shape:hover {
   border-radius: 50%;
 }
+
+.hide {
+  display: none;
+}
