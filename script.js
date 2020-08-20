@@ -25,7 +25,8 @@ const getRandomNum = (n) => Math.round(Math.random() * n);
 const getGradient = () => `
   radial-gradient(ellipse at 10% 20%,
   ${getHexString()} 0%,  
-  ${getHexString()} 50%, 
+  ${getHexString()} 33%, 
+  ${getHexString()} 66%, 
   ${getHexString()} 100%)
 `;
 
