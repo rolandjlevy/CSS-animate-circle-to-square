@@ -14,14 +14,14 @@ h3 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: auto 30px;
+  margin: auto 35px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1rem;
-  max-width: 320px
+  max-width: 450px
 }
 
 .shape {
@@ -35,7 +35,7 @@ h3 {
   transition: all 0.3s ease-in-out;
   transform: rotate(90deg) scale(1);
   z-index: 1;
-  animation: morph 1s ease;
+  animation: morph 1.5s ease;
 }
 
 @keyframes morph {
@@ -64,8 +64,8 @@ h3 {
 }
 
 .container[data-size='50'] .shape {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 
 .container[data-morph-to='square'] .shape {
