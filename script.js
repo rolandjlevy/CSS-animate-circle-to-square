@@ -10,7 +10,7 @@ while (++counter < base) {
   hexChars.push(char);
 }
 
-const generateHexString = () => {
+const getHexString = () => {
   let result = '#';
   let counter = 0;
   while (++counter <= hexStringLength) {
@@ -22,20 +22,20 @@ const generateHexString = () => {
 
 const getRandomNum = (n) => Math.round(Math.random() * n);
 
-const getRadialGradient = () => `
+const getGradient = () => `
   radial-gradient(ellipse at 10% 20%,
-  ${generateHexString()} 0%,  
-  ${generateHexString()} 50%, 
-  ${generateHexString()} 100%)
+  ${getHexString()} 0%,  
+  ${getHexString()} 50%, 
+  ${getHexString()} 100%)
 `;
 
 const squareContainer = document.querySelector('.container[data-morph-to="square"]');
 const square = document.querySelector('.container[data-morph-to="square"] > div');
-square.style.background = getRadialGradient();
+square.style.background = getGradient();
 
 const circleContainer = document.querySelector('.container[data-morph-to="circle"]');
 const circle = document.querySelector('.container[data-morph-to="circle"] > div');
-circle.style.background = getRadialGradient();
+circle.style.background = getGradient();
 
 
 // clone circles and squares
@@ -45,9 +45,9 @@ let count = 1;
 
 while (count++ < total) {
   let cloneCircle = circle.cloneNode(true);
-  cloneCircle.style.background = getRadialGradient();
+  cloneCircle.style.background = getGradient();
   circleContainer.appendChild(cloneCircle);
   let cloneSquare = square.cloneNode(true);
-  cloneSquare.style.background = getRadialGradient();
+  cloneSquare.style.background = getGradient();
   squareContainer.appendChild(cloneSquare);
 }
