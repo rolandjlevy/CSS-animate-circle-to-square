@@ -1,5 +1,5 @@
 body {
-  background-color: #444;
+  background-color: #000;
 }
 
 h3 {
@@ -26,10 +26,9 @@ h3 {
 
 .shape {
   transition: all 0.3s ease-in-out;
-  background: radial-gradient(ellipse at 10% 20%, #f9f9f9 0%, #ffffff 20%, #f9f9f9 30%, #d3d7db 60%, #83898f 90%, #8a9096 100%);
+  /* background: radial-gradient(ellipse at 10% 20%, #f9f9f9 0%, #ffffff 20%, #f9f9f9 30%, #d3d7db 60%, #83898f 90%, #8a9096 100%); */
   z-index: 0;
-  /* filter: blur(4px); */
-    filter: blur(0);
+  filter: blur(0);
 }
 
 .shape:hover {
